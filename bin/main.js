@@ -215,7 +215,7 @@ var create = (function() {
 
     module.init = function(settings) {
         serial = new SerialPort(settings.serialport, {
-          baudrate: settings.version === 1 ? create2Baudrate : create1Baudrate, // 2 is the default
+          baudrate: settings.version === 2 ? create2Baudrate : create1Baudrate,
           bufferSize: 5
         });
 
